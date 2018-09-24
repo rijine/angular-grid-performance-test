@@ -1,0 +1,18 @@
+:host {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: inherit;
+  border-bottom: 1px solid #dee3ec;
+  border-left: 1px dashed #d3dfe3;
+  padding: 3px;
+  width: 72px;
+  height: 36px;
+  /* -webkit-box-flex: 72px;
+  -ms-flex: 72px 0 0px;
+  flex: 72px 0 0;
+  display: flex; */
+}
