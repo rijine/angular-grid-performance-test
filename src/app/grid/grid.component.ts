@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-grid',
@@ -6,7 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./grid.component.css']
 })
 export class GridComponent implements OnInit {
-  @Input() grid;
+  @Input()
+  grid;
   constructor() {}
   ngOnInit() {}
+
+  /* @HostListener('mousemove', ['$event'])
+  setMouseposition(event: any) {
+    console.log(event.offsetX, event.offsetY);
+  } */
 }

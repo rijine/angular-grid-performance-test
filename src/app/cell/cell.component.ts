@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-cell',
@@ -10,6 +10,11 @@ export class CellComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  @HostListener('mouseenter', ['$event'])
+  onMouseEntered(event) {
+    console.log(event.offsetX, event.offsetY);
   }
 
 }

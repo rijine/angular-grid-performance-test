@@ -12,9 +12,4 @@ export class CellsComponent implements OnInit {
   ngOnInit() {
   }
 
-  @HostListener('mouseenter', ['$event'])
-  onMouseEntered() {
-    console.log('here');
-  }
-
 }

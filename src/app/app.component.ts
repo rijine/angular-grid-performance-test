@@ -29,6 +29,7 @@ export class AppComponent {
   }
 
   generate() {
+    window.performance.mark('Rijin-Start');
     this.clearIt();
     for (let i = 0; i < this.rowsCount; i++) {
       const row = {
